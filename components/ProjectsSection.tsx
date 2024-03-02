@@ -50,6 +50,7 @@ const ProjectsSection = () => {
 
           const formattedImages = sortedProjects.map((project: Project) => ({
             ...project,
+            hidden: project.hidden || [],
             images: project.images
               ? project.images
                 .map((img) => ({
